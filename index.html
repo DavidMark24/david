@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Otomanopee+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/main.css">
     <title>Document</title>
 </head>
 <body>
     <div class="navbar">
         <div class="container">
-            <a href="#">D<span>J</span></a>
+            <a class="logo" href="#">D<span>J</span></a>
             <img id="mobile-cta" class="mobile-nav" src="images/menu.svg" alt="Open navigation">
             <nav>
                 <ul class="primary-nav">
@@ -28,7 +31,7 @@
     </div>
     <section class="hero">
         <div class="container">
-<h1>
+<h1 class="tracking-in-expand">
     Hi, my name is <span>David Johnson</span> and I am a Full Stack Developer.
 </h1>
         </div>
@@ -36,20 +39,25 @@
     <section class="about-me">
 <div class="container">
     <div class="about-me-up">
-        <h3>About Me </h3>
+        <h2>About Me </h2>
 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto tempora sunt, 
     quos neque error perferendis maxime eum dolorem ab labore alias aut possimus consequatur beatae exercitationem 
     tempore repudiandae quae unde.
 </p>
     </div>
     <div class="skills-down">
-        
+<img class="skills" src="images/shuttle.svg" alt="rocketship">
+<h4>Dynamic</h4>
+<p>Lorem ipsum dolor sit amet consectetur</p>
+<img class="skills" src="images/phone-and-computer-monitor-outlines-inside-a-circle.svg" alt="Computer and Phone">
+<h4>Responsive</h4>
+<p>Lorem ipsum dolor sit amet consectetur</p>
     </div>
 </div>
 </section>
 <section class="work">
     <div class="container">
-        <h3>My Work</h3>
+        <h2>My Work</h2>
 <img src="images/onlyfoods.png" alt="Only Foods Website">
 <img src="images/epic.png" alt="Epic PT Website">
 <img src="images/fitness.png" alt="Fitness Tracker Website">
@@ -58,7 +66,7 @@
 <section class="contact">
     <div class="container">
         <div class="contact-left">
-            <h3>Contact</h3>
+            <h2>Contact</h2>
             <form action="">
                 <label for="name">Name</label>
                 <input type="text"id="name" name="name">
