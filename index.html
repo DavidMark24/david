@@ -1,94 +1,113 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>david</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Otomanopee+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/main.css">
-    <title>Document</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <div class="navbar">
-        <div class="container">
-            <a class="logo" href="#">D<span>J</span></a>
-            <img id="mobile-cta" class="mobile-nav" src="images/menu.svg" alt="Open navigation">
+
+    <div class="nav-container">
+        <header>
+            <a href="index.html" class="logo">David Johnson</a>
             <nav>
-                <ul class="primary-nav">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About Me</a></li>
-                    <li><a href="">My Work</a></li>
-                 
-                </ul>
-                <ul class="secondary-nav">
-                
-                    <li><a href="">Contact</a></li>
+                <ul>
+                    <li><a href="#"></a>My Work</li>
+                    <li><a href="#"></a>My Skills</li>
                 </ul>
             </nav>
+        </header>
+        <div class="social-header">
+            <ul>
+                <li><a href=""><img src="images/github@3x.png" alt="github" ></a></li>
+                <li><a href=""><img src="images/linkedin@3x.png" alt="linkedin" ></a></li>
+                <li><a href=""><img src="images/twitter@3x.png" alt="twitter" ></a></li>
+            </ul>
         </div>
     </div>
-    <section class="hero">
-        <div class="container">
-<h1 class="tracking-in-expand">
-    Hi, my name is <span>David Johnson</span> and I am a Full Stack Developer.
-</h1>
+
+    <div class="hero">
+        <div class="content">
+            <h1>Hi, I'm David, FrontEnd Developer.</h1>
+            <h2>Web Developer / Full Stack Developer</h2>
+            <div class="contact-content">
+                <h3>Contact Me</h3>
+            </div>
+        </div>
+        <svg width="523" height="519" class="hero-design" viewBox="0 0 523 519" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="168" y="167" width="187" height="187" fill="#D4F028"/>
+            <ellipse cx="439" cy="260.5" rx="84" ry="82.5" fill="#1A667E"/>
+            <ellipse cx="262" cy="436.5" rx="84" ry="82.5" fill="#3ECED8"/>
+            <ellipse cx="84" cy="260.5" rx="84" ry="82.5" fill="#1A667E"/>
+            <ellipse cx="262" cy="82.5" rx="84" ry="82.5" fill="#3ECED8"/>
+            </svg>
+    </div>
+
+    <section class="featured">
+        <div class="left">
+            <div class="inner transition2">
+                <p class="subtitle">Featured Project</p>
+                <a href="#" class="featured-title">OnlyFoods</a>
+                <p class="featured-desc">Having hard time deciding what to eat? Look no further! Only Foods to the rescue! It is Tinder for Food!</p>
+            </div>
+        </div>
+        <img class="right transition2" src="images/onlyfoods.png" alt="onlyfoods.com" >
+    </section>
+
+    <section class="skills">
+        <div class="skills-container">
+            <ul>
+                <li class="transition2">
+                    <div class="icon-container one">
+                        <img src="images/monitor.png" alt="" srcset="">
+                    </div>
+                    <p class="skill-title">Frontend Responsive Design</p>
+                    <p class="fearured-desc skill-desc">Mobile first design. Able to fit on any device!</p>
+                </li>
+                <li class="transition2">
+                    <div class="icon-container two">
+                        <img src="images/coding-language.png" alt="" srcset="">
+                    </div>
+                    <p class="skill-title">Backend Devlopment</p>
+                    <p class="fearured-desc skill-desc">From MERN Stack to API intergration.</p>
+                </li>
+                <li class="transition2">
+                    <div class="icon-container three">
+                        <img src="images/lightbulb.png" alt="" srcset="">
+                    </div>
+                    <p class="skill-title">Problem Solving</p>
+                    <p class="fearured-desc skill-desc">Very adaptable and always looks for new ways to approach problems.</p>
+                </li>
+            </ul>
         </div>
     </section>
-    <section class="about-me">
-<div class="container">
-    <div class="about-me-up">
-        <h2>About Me </h2>
-<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto tempora sunt, 
-    quos neque error perferendis maxime eum dolorem ab labore alias aut possimus consequatur beatae exercitationem 
-    tempore repudiandae quae unde.
-</p>
-    </div>
-    <div class="skills-down">
-<img class="skills" src="images/shuttle.svg" alt="rocketship">
-<h4>Dynamic</h4>
-<p>Lorem ipsum dolor sit amet consectetur</p>
-<img class="skills" src="images/phone-and-computer-monitor-outlines-inside-a-circle.svg" alt="Computer and Phone">
-<h4>Responsive</h4>
-<p>Lorem ipsum dolor sit amet consectetur</p>
-    </div>
-</div>
-</section>
-<section class="work">
-    <div class="container">
-        <h2>My Work</h2>
-<img src="images/onlyfoods.png" alt="Only Foods Website">
-<img src="images/epic.png" alt="Epic PT Website">
-<img src="images/fitness.png" alt="Fitness Tracker Website">
-    </div>
-</section>
-<section class="contact">
-    <div class="container">
-        <div class="contact-left">
-            <h2>Contact</h2>
-            <form action="">
-                <label for="name">Name</label>
-                <input type="text"id="name" name="name">
 
-                <label for="email">Email</label>
-                <input type="email"id="email" name="email">
-
-                <label for="message">Message</label>
-                <textarea name="message" id="message" cols="30" rows="10"></textarea>
-
-                <input type="submit" class="submit-btn">
-            </form>
+    <section class="portfolio">
+        <div class="portfolio-container">
+            <div class="portfolio-left transition3">
+                <div class="inner">
+                    <p class="subtitle">Epic Physical Therapy</p>
+                    <p class="featured-title">epic-pt.com</p>
+                    <p class="featured-desc">A physical therapy site based out of Washington.</p>
+                </div>
+            </div>
+            <a href="#"><img src="images/epic.png" alt=""></a>
         </div>
-        <div class="contact-right">
-            <h3>Socials</h3>
-            <i class="far fa-envelope"> Email </i>
-            <p> dmjwebapps@gmail.com</p>
-            <a href="https://www.linkedin.com/in/davidjohnson24/"> <i class="fab fa-linkedin fa-3x"> </i> </a>
-            <a href="https://github.com/DavidMark24"> <i class="fab fa-github-square fa-3x"> </i> </a>
+        <div class="portfolio-container">
+            <div class="portfolio-left transition3">
+                <div class="inner">
+                    <p class="subtitle">Liv Lawn Care</p>
+                    <p class="featured-title">livlawncare.com</p>
+                    <p class="featured-desc">Lawn & Pool maintence company based put of Redlands, CA.</p>
+                </div>
+            </div>
+            <a href="#"><img src="images/livlawn.png" alt=""></a>
         </div>
-    </div>
-</section>
-<script src="https://kit.fontawesome.com/00384141bd.js" crossorigin="anonymous"></script>
+    </section>
+
 </body>
 </html>
