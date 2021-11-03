@@ -49,6 +49,17 @@ ul {
     display: none;
 }
 
+.contact-content {
+  background: #3F8EAF;
+  color: #d4f028;
+  border-radius: 1em;
+  padding: .2em;
+  
+  a {
+    color: #d4f028;
+  }
+}
+
 .hero {
     background: #4298BD;
     color: white;
@@ -150,11 +161,6 @@ section {
    a { 
      color: white;
    }
-}
-
-.me {
-border-radius: 10%;
-margin-top: 2em;
 }
 
 footer {
