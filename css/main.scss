@@ -50,9 +50,8 @@ ul {
 }
 
 .contact-content {
-  background: #3F8EAF;
   color: #d4f028;
-  border-radius: 1em;
+
   padding: .2em;
   
   a {
@@ -88,6 +87,10 @@ section {
     padding: 4em 2em;
     text-align: center;
     margin: 1em;
+}
+
+.right {
+  border-radius: 1.5em;
 }
 
 .subtitle {
@@ -127,20 +130,40 @@ section {
     .icon-container {
       display: grid;
       place-content: center;
+      height: 100px;
+      margin: 0 auto;
 
-      img {
-        height: 150px;
-        width: 100%;
-        
+      &.one {
+        width: 100px;
+      }
+      &.two {
+        width: 75px;
+      }
+      &.three {
+        width: 80px;
       }
 
     }
 
 }
 
+.skill-title {
+  font-weight: bold;
+}
+
+
+.portfolio {
+  background: #f0efed;
+}
+
 .portfolio-container {
   padding: 1em;
   margin-bottom: 1em;
+}
+
+.portfolio-container a img {
+  border-radius: 1em;
+
 }
 
 .contact {
@@ -166,4 +189,199 @@ section {
 footer {
   text-align: center;
 
+}
+
+@media only screen and (min-width: 500px) {
+  .skills-container {
+    display: flex;
+    justify-content: center;
+    grid-gap: .5em;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .featured, .portfolio {
+    text-align: left;
+  }
+  .featured, .portfolio-container {
+    display: grid;
+    grid-template-columns: 40% auto;
+  }
+
+  .left, .portfolio-left {
+    display: grid;
+    place-content: center;
+  }
+
+  .right {
+    margin-left: 2em;
+    margin-top: 1em;
+  }
+
+  .skills {
+    margin-top: -7em;
+    margin-bottom: -7em;
+    padding-top:  5em; ;
+  }
+
+  .skills-container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 1em;
+
+  }
+
+  .portfolio {
+    padding-top: 5em;
+    margin-bottom: 5em;
+  }
+  .portfolio-container img {
+    margin-left: 2em;
+  }
+
+  .contact {
+    margin-top: -7em;
+  }
+
+  .social-contact {
+    display: grid;
+    place-content: center;
+  }
+}
+ 
+@media only screen and (min-width: 1050px) {
+
+  .hero {
+    height: 80vh;
+  }
+
+  .nav-container {
+    display: grid;
+    grid-template-columns: 66% auto;
+    background: unset;
+
+    header {
+      background:#3F8EAF;
+    }
+  }
+
+  header {
+    padding: 2em 2em 2em 4em;
+  }
+
+  .social-header {
+    padding: 2em 4em 2em 0;
+  }
+
+  section {
+    padding: 4em;
+  }
+
+  .social-header {
+    display: block; 
+
+    ul {
+      display: flex;
+      justify-content: space-between;
+      width: 12em;
+      float: right;
+
+      img {
+        width: 25px;
+      }
+    }
+  }
+
+  .hero {
+    display: grid;
+    grid-template-columns: 66% auto;
+    background: unset;
+    padding: 0;
+
+    .content {
+      background: #4298BD ;
+      padding: 6em 8em 6em 4em;
+      text-align: left;
+
+      h1 {
+        font-size: 2em;
+        line-height: 1.5em;
+      }
+
+      h2 {
+        font-size: 1.2em;
+        line-height: 1.2em;
+      }
+
+      .contact-content {
+        text-align: left;
+        font-weight: bold;
+        font-size: 1.2em;
+      }
+
+    }
+  }
+
+  .hero-design {
+    display: unset;
+    margin-left: -50%;
+    margin-top: 15%;
+    width: 100%;
+  }
+
+  .portfolio img {
+    float: right;
+    max-width: 500px;
+  }
+
+  .featured img {
+    float: right;
+    max-width: 500px;
+    margin-left: 10em;
+  }
+
+}
+
+@media only screen and (min-width: 1250px) {
+  
+  header {
+    padding: 2em 2em 2em 10em;
+  }
+
+  .social-header {
+    padding: 2em 10em 2em 10em;
+  }
+
+  .hero .content {
+    padding: 6em 8em 6em 10em;
+  }
+  .featured img {
+    float: right;
+    max-width: 500px;
+    margin-left: 17em;
+  }
+}
+
+@media only screen and (min-width: 1550px) {
+  header {
+    padding: 2em 2em 2em 20em;
+  }
+
+  .social-header {
+    padding: 2em 20em 2em 0;
+  }
+
+  section {
+    padding: 6em 20em 4em 20em;
+  }
+
+  .hero .content {
+    padding: 9em 20em 6em 20em;
+  }
+
+  .featured img {
+    float: right;
+    max-width: 500px;
+    margin-left: 20em;
+  }
 }
