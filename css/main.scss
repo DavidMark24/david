@@ -191,6 +191,16 @@ footer {
 
 }
 
+@media only screen and (min-width: 300px) {
+
+  .social-contact ul {
+    display: flex;
+    place-content: center;
+    margin-right: 2em;
+  }
+
+}
+
 @media only screen and (min-width: 500px) {
   .skills-container {
     display: flex;
